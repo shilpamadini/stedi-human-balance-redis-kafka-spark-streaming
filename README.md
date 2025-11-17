@@ -21,7 +21,7 @@ The final output enables STEDI to visualize how fall-risk varies across customer
 ## Architecture Summary
 Below is the high-level architecture implemented in this project:
 
-![diagram](https://github.com/shilpamadini/stedi-human-balance-redis-kafka-spark-streaming/blob/2f188e62d779135ed6ed0394fe783fc421adb372/systems-diagram.png)
+![systems-diagram.png](https://github.com/shilpamadini/stedi-human-balance-redis-kafka-spark-streaming/blob/2f188e62d779135ed6ed0394fe783fc421adb372/systems-diagram.png)
 
 Spark performs: Base64 decoding, JSON extraction, Windowless structured streaming, Real-time joins, Data enrichment, Writing the final stream back to Kafka (customer-risk)
 
