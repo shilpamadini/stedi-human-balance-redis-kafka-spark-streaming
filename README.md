@@ -1,5 +1,5 @@
 
-# Overview: STEDI Human Balance Analytics – Real-Time Risk Scoring Pipeline
+# STEDI Human Balance Analytics – Real-Time Risk Scoring Pipeline
 The STEDI Human Balance Analytics project simulates a real-time health monitoring platform designed to assess fall risk for seniors based on sensor data and repeated balance tests. The system collects customer assessment events, calculates individual risk scores, and visualizes population-wide risk trends through a live updating graph.
 To enable this capability, the engineering and data streaming pipeline integrates Redis, Kafka, Kafka Connect, Spark Structured Streaming, and a STEDI web application.
 This project focuses on building the complete streaming workflow needed to deliver risk scores by birth year to the STEDI dashboard.
@@ -20,6 +20,8 @@ The final output enables STEDI to visualize how fall-risk varies across customer
 
 ## Architecture Summary
 Below is the high-level architecture implemented in this project:
+
+![diagram]([images/myimage.png](https://github.com/shilpamadini/stedi-human-balance-redis-kafka-spark-streaming/blob/2f188e62d779135ed6ed0394fe783fc421adb372/systems-diagram.png))
 
 Spark performs: Base64 decoding, JSON extraction, Windowless structured streaming, Real-time joins, Data enrichment, Writing the final stream back to Kafka (customer-risk)
 
